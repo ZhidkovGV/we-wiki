@@ -1,3 +1,14 @@
+@font-face {
+  font-family: Inter;
+  src: url(https://we-wiki.herokuapp.com/inter-regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal
+}
+
+.body {
+  font-family: Inter!important
+}
+
 .mock-wevestr {
   background-image: url('/assets/mock-wevestr.svg');
   background-repeat: no-repeat;
