@@ -1,7 +1,7 @@
 .appWikiLink {
   position: fixed;
   background-color: white;
-  border: 1px solid rgb(144, 144, 144);
+  border: 1px solid #dfdede;
   border-radius: 4px;
   color: black;
   font-family: Arial;
@@ -9,4 +9,24 @@
   font-size: 13px;
   margin-top: 5px;
   transform: translateX(-50%);
+  font-family: Inter;
+
+  ::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #dfdede;
+    right: 0;
+    top: 50%;
+    position: absolute;
+  }
+}
+
+.wiki-link_footer {
+
+}
+
+.wiki-link_body {
+padding-top: 10px;
 }

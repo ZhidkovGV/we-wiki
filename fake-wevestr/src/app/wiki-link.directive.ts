@@ -18,6 +18,8 @@ import { WikiLinkComponent } from './wiki-link.component';
 export class WikiLinkDirective {
   @Input() appWikiLink = '';
   @Input() header: string;
+  @Input() footer: string;
+
 
   private componentRef: ComponentRef<any> | null = null;
 
@@ -52,6 +54,7 @@ export class WikiLinkDirective {
 
       this.componentRef.instance.content = this.appWikiLink;
       this.componentRef.instance.header = this.header;
+      this.componentRef.instance.footer = this.footer;
       const { left, right, bottom } =
         this.elementRef.nativeElement.getBoundingClientRect();
       this.componentRef.instance.left = (right - left) / 2 + left;

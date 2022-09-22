@@ -8,6 +8,7 @@ import {Component, OnInit} from '@angular/core';
 export class WikiLinkComponent implements OnInit {
   content: string = '';
   header: string ='';
+  footer: string ='';
   left: number = 0;
   top: number = 0;
 
