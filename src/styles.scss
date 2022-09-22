@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, 'sans-serif';
+  font-size: 14px;
+}
+
+
+@mixin font($font-family, $font-file, $weight) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-file + '.ttf') format('truetype');
+    font-weight: $weight;
+    font-style: normal;
+  }
+}
+
+@include font('Inter', '~assets/fonts/Inter-Regular', 400);
+@include font('Inter', '~assets/fonts/Inter-Bold', bold);
+@include font('Inter', '~assets/fonts/Inter-Medium', 500);
