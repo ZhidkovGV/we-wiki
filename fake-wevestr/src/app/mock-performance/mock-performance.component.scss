@@ -1,6 +1,21 @@
 .chart {
   background-image: url('/assets/graph.svg');
   background-repeat: no-repeat;
-  width: 1300px;
+  width: 87%;
   height: 500px;
 }
+
+.header {
+  background-image: url('/assets/base-top.svg');
+  background-repeat: no-repeat;
+  height: 116px;
+  margin-left: -50px;
+}
+
+.content {
+  background-color: #FFF;
+  padding: 16px 0px 0 16px;
+  border-radius: 8px;
+}
+/**/
+
