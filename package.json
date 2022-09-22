@@ -1,0 +1,8 @@
+{
+    "name": "we-wiki",
+    "version": "0.0.0",
+    "scripts": {
+      "build": "cd ./fake-wevestr && npm run build && cd ../wiki && docker-compose up -d",
+      "setup": "cd ./fake-wevestr && npm install"
+    }
+  }
