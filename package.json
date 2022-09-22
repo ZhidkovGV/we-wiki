@@ -2,7 +2,11 @@
     "name": "we-wiki",
     "version": "0.0.0",
     "scripts": {
-      "build": "cd ./fake-wevestr && npm run build && cd ../wiki && docker-compose up -d",
-      "setup": "cd ./fake-wevestr && npm install"
+        "build": "cd ./fake-wevestr && npm run build && cd ../wiki && docker-compose up -d",
+        "setup": "cd ./fake-wevestr && npm install",
+        "start": "concurrently \"cd ./fake-wevestr && npm run start\" \"cd ./wiki && docker-compose up -d\""
+    },
+    "dependencies": {
+        "concurrently": "^7.4.0"
     }
-  }
+}
