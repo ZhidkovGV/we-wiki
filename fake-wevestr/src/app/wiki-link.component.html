@@ -1,5 +1,5 @@
 <div class="appWikiLink" [style.left]="left + 'px'" [style.top]="top + 'px'">
   <h3 class="wiki-link_header">{{header}}</h3>
-  - <span class="wiki-link_body">{{content}}</span><br><br>
-  <span class="wiki-link_footer">{{footer}}</span>
+  <div class="wiki-link_body">{{content}}</div><br>
+  <span class="wiki-link_footer" [innerHTML]="footer"></span>
 </div>
